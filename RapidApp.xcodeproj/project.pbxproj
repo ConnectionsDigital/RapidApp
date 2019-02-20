@@ -12,7 +12,6 @@
 		8A11DEC0221CEE7B00FC3975 /* WordPress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A11DEB5221CEE7B00FC3975 /* WordPress.storyboard */; };
 		8A11DEC1221CEE7B00FC3975 /* WordPressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11DEB7221CEE7B00FC3975 /* WordPressViewController.swift */; };
 		8A11DEC3221CEE7B00FC3975 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11DEB9221CEE7B00FC3975 /* PostCell.swift */; };
-		8A11DED1221CEE8E00FC3975 /* TOS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A11DECA221CEE8E00FC3975 /* TOS.storyboard */; };
 		8A11DF07221CF07A00FC3975 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11DF06221CF07A00FC3975 /* MessageUI.framework */; };
 		8A44F91221A9E68C008C3294 /* MasterConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44F91121A9E68C008C3294 /* MasterConfig.swift */; };
 		8A44F91421A9EB58008C3294 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44F91321A9EB58008C3294 /* UIColorExtension.swift */; };
@@ -23,6 +22,7 @@
 		8A494019221D1AD70079D177 /* connections.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 8A494016221D1AD70079D177 /* connections.gpx */; };
 		8A49401A221D1AD70079D177 /* MapViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A494017221D1AD70079D177 /* MapViewControler.swift */; };
 		8A49401C221D1AE20079D177 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A49401B221D1AE20079D177 /* Map.storyboard */; };
+		8A49401F221D1BB90079D177 /* TOS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A49401E221D1BB90079D177 /* TOS.storyboard */; };
 		8A6554C721A2003100656573 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6554C621A2003100656573 /* SideMenuVC.swift */; };
 		8A6554C921A20D5100656573 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6554C821A20D5100656573 /* MainVC.swift */; };
 		8AA2E15921A0A6300068E282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2E15821A0A6300068E282 /* AppDelegate.swift */; };
@@ -39,7 +39,6 @@
 		8A11DEB6221CEE7B00FC3975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/WordPress.storyboard; sourceTree = "<group>"; };
 		8A11DEB7221CEE7B00FC3975 /* WordPressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPressViewController.swift; sourceTree = "<group>"; };
 		8A11DEB9221CEE7B00FC3975 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
-		8A11DECB221CEE8E00FC3975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TOS.storyboard; sourceTree = "<group>"; };
 		8A11DF06221CF07A00FC3975 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		8A44F91121A9E68C008C3294 /* MasterConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterConfig.swift; sourceTree = "<group>"; };
 		8A44F91321A9EB58008C3294 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -50,6 +49,7 @@
 		8A494016221D1AD70079D177 /* connections.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = connections.gpx; sourceTree = "<group>"; };
 		8A494017221D1AD70079D177 /* MapViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewControler.swift; sourceTree = "<group>"; };
 		8A49401B221D1AE20079D177 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		8A49401E221D1BB90079D177 /* TOS.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TOS.storyboard; sourceTree = "<group>"; };
 		8A6554C621A2003100656573 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		8A6554C821A20D5100656573 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		8AA2E15521A0A6300068E282 /* RapidApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RapidApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,23 +95,6 @@
 			path = ../WordPressModule/WordPress/WordPress;
 			sourceTree = "<group>";
 		};
-		8A11DEC5221CEE8E00FC3975 /* TOS */ = {
-			isa = PBXGroup;
-			children = (
-				8A11DECA221CEE8E00FC3975 /* TOS.storyboard */,
-			);
-			name = TOS;
-			path = ../TOSModule/TOS;
-			sourceTree = "<group>";
-		};
-		8A11DED4221CEEA800FC3975 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Map;
-			path = ../MapModule/Map;
-			sourceTree = "<group>";
-		};
 		8A49400E221D185C0079D177 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +115,14 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
+		8A49401D221D1B9A0079D177 /* TOS */ = {
+			isa = PBXGroup;
+			children = (
+				8A49401E221D1BB90079D177 /* TOS.storyboard */,
+			);
+			path = TOS;
+			sourceTree = "<group>";
+		};
 		8A7886492202EC2800ACAA51 /* Licenses */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,12 +134,11 @@
 		8AA2E14C21A0A6300068E282 = {
 			isa = PBXGroup;
 			children = (
+				8A49401D221D1B9A0079D177 /* TOS */,
 				8A494013221D1AB10079D177 /* Map */,
 				8AA2E15721A0A6300068E282 /* RapidApp */,
 				8A49400E221D185C0079D177 /* Contact */,
 				8AF35E0F221D07C7006B166D /* Privacy */,
-				8A11DED4221CEEA800FC3975 /* Map */,
-				8A11DEC5221CEE8E00FC3975 /* TOS */,
 				8A11DEAF221CEE7B00FC3975 /* WordPress */,
 				8A7886492202EC2800ACAA51 /* Licenses */,
 				8AA2E15621A0A6300068E282 /* Products */,
@@ -251,8 +241,8 @@
 				8A11DEC0221CEE7B00FC3975 /* WordPress.storyboard in Resources */,
 				8AF35E11221D0802006B166D /* Privacy.storyboard in Resources */,
 				8AA2E16321A0A6310068E282 /* LaunchScreen.storyboard in Resources */,
-				8A11DED1221CEE8E00FC3975 /* TOS.storyboard in Resources */,
 				8AA2E16021A0A6310068E282 /* Assets.xcassets in Resources */,
+				8A49401F221D1BB90079D177 /* TOS.storyboard in Resources */,
 				8A49401C221D1AE20079D177 /* Map.storyboard in Resources */,
 				8A494019221D1AD70079D177 /* connections.gpx in Resources */,
 				8AA2E15E21A0A6300068E282 /* Main.storyboard in Resources */,
@@ -293,14 +283,6 @@
 				8A11DEB6221CEE7B00FC3975 /* Base */,
 			);
 			name = WordPress.storyboard;
-			sourceTree = "<group>";
-		};
-		8A11DECA221CEE8E00FC3975 /* TOS.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A11DECB221CEE8E00FC3975 /* Base */,
-			);
-			name = TOS.storyboard;
 			sourceTree = "<group>";
 		};
 		8AA2E15C21A0A6300068E282 /* Main.storyboard */ = {
