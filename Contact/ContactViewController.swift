@@ -23,9 +23,8 @@ public class ContactViewController: UIViewController, MFMailComposeViewControlle
         nameField!.layer.borderWidth = 1
         emailField!.layer.borderColor = UIColor.darkGray.cgColor
         emailField!.layer.borderWidth = 1
-        messageField!.layer.borderColor = UIColor.darkGray.cgColor
+        messageField!.layer.borderColor = UIColor.red.cgColor
         messageField!.layer.borderWidth = 1
-
     }
 
     @IBAction func sendButton(_ sender: Any) {
@@ -45,7 +44,7 @@ public class ContactViewController: UIViewController, MFMailComposeViewControlle
         
     }
     
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+    private func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         
         switch result.rawValue {
         case MFMailComposeResult.cancelled.rawValue:

@@ -97,7 +97,7 @@ public class MapScreen: UIViewController {
             guard let response = resonse else { return } //TODO show response not available in an alert
             
             for route in response.routes {
-                let steps = route.steps //TODO: Place this in a table view
+                _ = route.steps //TODO: Place this in a table view
                 self.mapView.addOverlay(route.polyline)
                 self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
             }
@@ -132,14 +132,14 @@ public class MapScreen: UIViewController {
 
 extension MapScreen: CLLocationManagerDelegate {
     
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    private func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         checkLocationAuthorization()
     }
 }
 
 extension MapScreen: MKMapViewDelegate {
     
-    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+    private func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         let center = getCenterLocation(for: mapView)
         
         guard let previousLocation = self.previousLocation else { return }
@@ -170,7 +170,7 @@ extension MapScreen: MKMapViewDelegate {
             }
         }
     }
-    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+    private func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(overlay: overlay as! MKPolyline)
         
         renderer.strokeColor = .blue
