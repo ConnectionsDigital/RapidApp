@@ -123,5 +123,4 @@ public class PostViewController: UIViewController, UITableViewDelegate, UITableV
             self.present(controller, animated: true, completion: nil)
         }
     }
-
 }

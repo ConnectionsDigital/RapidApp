@@ -36,9 +36,5 @@ struct WPModel: Codable {
     var title: PostTitleModel = PostTitleModel() // Article title
     struct PostTitleModel: Codable {
         var rendered: String = ""
-        init() {
-            //self.rendered = String(self.rendered)
-        }
-        
     }
 }

@@ -27,7 +27,7 @@ class MainVC: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(showTOS), name: NSNotification.Name("ShowTOS"), object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(showMasterSettings), name: NSNotification.Name("ShowMasterSettings"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showAdminSettings), name: NSNotification.Name("ShowAdminSettings"), object: nil)
         
     }
     
@@ -59,8 +59,8 @@ class MainVC: UIViewController {
         performSegue(withIdentifier: "ShowTOS", sender: nil)
     }
     
-    @objc func showMasterSettings() {
-        performSegue(withIdentifier: "ShowMasterSettings", sender: nil)
+    @objc func showAdminSettings() {
+        performSegue(withIdentifier: "ShowAdminSettings", sender: nil)
     }
     
     @IBAction func onMoreTapped() {

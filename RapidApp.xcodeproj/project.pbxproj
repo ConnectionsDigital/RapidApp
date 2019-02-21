@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A11DF07221CF07A00FC3975 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11DF06221CF07A00FC3975 /* MessageUI.framework */; };
-		8A44F91221A9E68C008C3294 /* MasterConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44F91121A9E68C008C3294 /* MasterConfig.swift */; };
+		8A44F91221A9E68C008C3294 /* AdminConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44F91121A9E68C008C3294 /* AdminConfig.swift */; };
 		8A44F91421A9EB58008C3294 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44F91321A9EB58008C3294 /* UIColorExtension.swift */; };
 		8A44F91621A9EC70008C3294 /* ClientConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44F91521A9EC70008C3294 /* ClientConfig.swift */; };
 		8A494010221D187D0079D177 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A49400F221D187D0079D177 /* Contact.storyboard */; };
@@ -35,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		8A11DF06221CF07A00FC3975 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		8A44F91121A9E68C008C3294 /* MasterConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterConfig.swift; sourceTree = "<group>"; };
+		8A44F91121A9E68C008C3294 /* AdminConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminConfig.swift; sourceTree = "<group>"; };
 		8A44F91321A9EB58008C3294 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		8A44F91521A9EC70008C3294 /* ClientConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientConfig.swift; sourceTree = "<group>"; };
 		8A49400F221D187D0079D177 /* Contact.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
@@ -115,7 +115,6 @@
 			children = (
 				8A494029221D1C6D0079D177 /* WordPress.storyboard */,
 				8A494021221D1C600079D177 /* PostCell.swift */,
-				8A494022221D1C600079D177 /* StringConversion.swift */,
 				8A494023221D1C610079D177 /* WordPressModel.swift */,
 				8A494024221D1C610079D177 /* WordPressViewController.swift */,
 			);
@@ -164,8 +163,9 @@
 				8AA2E16121A0A6310068E282 /* LaunchScreen.storyboard */,
 				8AA2E15C21A0A6300068E282 /* Main.storyboard */,
 				8A6554C821A20D5100656573 /* MainVC.swift */,
-				8A44F91121A9E68C008C3294 /* MasterConfig.swift */,
+				8A44F91121A9E68C008C3294 /* AdminConfig.swift */,
 				8A6554C621A2003100656573 /* SideMenuVC.swift */,
+				8A494022221D1C600079D177 /* StringConversion.swift */,
 				8A44F91321A9EB58008C3294 /* UIColorExtension.swift */,
 			);
 			path = RapidApp;
@@ -261,7 +261,7 @@
 				8AA2E15B21A0A6300068E282 /* ContainerVC.swift in Sources */,
 				8A6554C921A20D5100656573 /* MainVC.swift in Sources */,
 				8A494028221D1C610079D177 /* WordPressViewController.swift in Sources */,
-				8A44F91221A9E68C008C3294 /* MasterConfig.swift in Sources */,
+				8A44F91221A9E68C008C3294 /* AdminConfig.swift in Sources */,
 				8AA2E15921A0A6300068E282 /* AppDelegate.swift in Sources */,
 				8A6554C721A2003100656573 /* SideMenuVC.swift in Sources */,
 				8A44F91421A9EB58008C3294 /* UIColorExtension.swift in Sources */,

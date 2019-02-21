@@ -6,7 +6,6 @@
 //FLORIAN
 //https://www.iosapptemplates.com/blog/swift-programming/convert-hex-colors-to-uicolor-swift-4
 
-
 //Implamentation 
 //let color = UIColor(hexString: "#e32400")
 
