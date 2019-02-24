@@ -21,13 +21,9 @@ class MainVC: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(showAbout), name: NSNotification.Name("ShowAbout"), object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(showMySettings), name: NSNotification.Name("ShowMySettings"), object: nil)
-        
         NotificationCenter.default.addObserver(self, selector: #selector(showPrivacy), name: NSNotification.Name("ShowPrivacy"), object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(showTOS), name: NSNotification.Name("ShowTOS"), object: nil)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(showAdminSettings), name: NSNotification.Name("ShowAdminSettings"), object: nil)
         
     }
     
@@ -47,20 +43,12 @@ class MainVC: UIViewController {
         performSegue(withIdentifier: "ShowAbout", sender: nil)
     }
     
-    @objc func showMySettings() {
-        performSegue(withIdentifier: "ShowMySettings", sender: nil)
-    }
-    
     @objc func showPrivacy() {
         performSegue(withIdentifier: "ShowPrivacy", sender: nil)
     }
     
     @objc func showTOS() {
         performSegue(withIdentifier: "ShowTOS", sender: nil)
-    }
-    
-    @objc func showAdminSettings() {
-        performSegue(withIdentifier: "ShowAdminSettings", sender: nil)
     }
     
     @IBAction func onMoreTapped() {
