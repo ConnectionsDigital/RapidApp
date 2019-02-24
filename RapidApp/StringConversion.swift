@@ -5,11 +5,9 @@
 //  Created by Kenneth W Jackson on 2/10/19.
 //  Copyright © 2019 Connections Digital. All rights reserved.
 //
+// original idea from https://stackoverflow.com/questions/25607247/how-do-i-decode-html-entities-in-swift
 
 import UIKit
-
-
-// original idea from https://stackoverflow.com/questions/25607247/how-do-i-decode-html-entities-in-swift
 
 extension String {
     var htmlToAttributedString: NSAttributedString? {

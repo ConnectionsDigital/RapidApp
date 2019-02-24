@@ -22,7 +22,5 @@ class SideMenuVC: UITableViewController {
         case 5: NotificationCenter.default.post(name: NSNotification.Name("ShowTOS"), object: nil)
         default: break
         }
-        
     }
-
 }

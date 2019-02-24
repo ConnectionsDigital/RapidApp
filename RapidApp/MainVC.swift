@@ -53,7 +53,6 @@ class MainVC: UIViewController {
     
     @IBAction func onMoreTapped() {
         print("Toggle Side Menu")
-        NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)
-        
+        NotificationCenter.default.post(name: NSNotification.Name("ToggleSideMenu"), object: nil)        
     }
 }

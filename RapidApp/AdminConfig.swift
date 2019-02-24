@@ -34,4 +34,6 @@ struct Style {
     let headerTextColor: String = "FFFFFF"
     let headerBackgroundColor: String = "E32400"
     let primaryFont: String = "helvetica"
+    let borderColor: String = "UIColor.darkGray.cgColor"
+    let boarderWidth: Int = 1
 }
