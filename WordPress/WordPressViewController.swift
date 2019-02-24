@@ -9,19 +9,19 @@
 import UIKit
 import SafariServices
 
-public class PostViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class PostViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var dataList:[WPModel] = [] // Add array to store data model
     
     @IBOutlet weak var tableView: UITableView!
     
-    override public func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         // Note: Added communication processing to be done at screen display
         reloadListDatas()
     }
     
-    override public func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
@@ -34,7 +34,7 @@ public class PostViewController: UIViewController, UITableViewDelegate, UITableV
         let session = URLSession(configuration: config)
         
         // Specify the URL to connect
-        let url = URL(string: "https://chrisjohnsonart.com/wp-json/wp/v2/posts/")
+        let url = URL(string: "https://wordpress.org/news/wp-json/wp/v2/posts/")
         
         // Set communication processing task
         let task = session.dataTask(with: url!) {(data, response, error) in
@@ -72,17 +72,17 @@ public class PostViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     // MARK: - UITableViewDataSource
-    public func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         // One section
         return 1
     }
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Display cells by the number of acquired data
         return dataList.count
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Create an instance of the created "PostCell"
         let cell: PostCell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! PostCell
         
@@ -97,7 +97,7 @@ public class PostViewController: UIViewController, UITableViewDelegate, UITableV
         return cell
     }
     
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Deselect a cell
         tableView.deselectRow(at: indexPath, animated: true)
         

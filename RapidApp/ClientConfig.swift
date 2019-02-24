@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Client {
+struct Client {
     let firstName: String = ""
     let lastName: String = ""
     let displayName: String = ""
@@ -28,7 +28,7 @@ public struct Client {
     let profilePictureUrl: String = ""
 }
 
-public struct Addresses {
+struct Addresses {
     let addressType: String = "billing"
     let address1: String = ""
     let address2: String = ""
@@ -37,15 +37,15 @@ public struct Addresses {
     let postalCode: String = ""
 }
 
-public struct Orders {
+struct Orders {
     let orderId: String = ""
 }
 
-public struct Downloads {
+struct Downloads {
     let downloadId: String = ""
 }
 
-public struct ClientStyle {
+struct ClientStyle {
     let headerTextColor: String = ""
     let headerBackgroundColor: String = ""
     let primaryFont: String = ""

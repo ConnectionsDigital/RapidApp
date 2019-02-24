@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A11DF07221CF07A00FC3975 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11DF06221CF07A00FC3975 /* MessageUI.framework */; };
 		8A44F91221A9E68C008C3294 /* AdminConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44F91121A9E68C008C3294 /* AdminConfig.swift */; };
 		8A44F91421A9EB58008C3294 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44F91321A9EB58008C3294 /* UIColorExtension.swift */; };
 		8A44F91621A9EC70008C3294 /* ClientConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44F91521A9EC70008C3294 /* ClientConfig.swift */; };
@@ -15,8 +14,6 @@
 		8A494012221D188A0079D177 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A494011221D188A0079D177 /* ContactViewController.swift */; };
 		8A494018221D1AD70079D177 /* Map.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A494014221D1AD60079D177 /* Map.xcdatamodeld */; };
 		8A494019221D1AD70079D177 /* connections.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 8A494016221D1AD70079D177 /* connections.gpx */; };
-		8A49401A221D1AD70079D177 /* MapViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A494017221D1AD70079D177 /* MapViewControler.swift */; };
-		8A49401C221D1AE20079D177 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A49401B221D1AE20079D177 /* Map.storyboard */; };
 		8A49401F221D1BB90079D177 /* TOS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A49401E221D1BB90079D177 /* TOS.storyboard */; };
 		8A494025221D1C610079D177 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A494021221D1C600079D177 /* PostCell.swift */; };
 		8A494026221D1C610079D177 /* StringConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A494022221D1C600079D177 /* StringConversion.swift */; };
@@ -25,6 +22,9 @@
 		8A49402A221D1C6D0079D177 /* WordPress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A494029221D1C6D0079D177 /* WordPress.storyboard */; };
 		8A6554C721A2003100656573 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6554C621A2003100656573 /* SideMenuVC.swift */; };
 		8A6554C921A20D5100656573 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6554C821A20D5100656573 /* MainVC.swift */; };
+		8A655B482222457C00B91FC4 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A655B472222457C00B91FC4 /* MapScreen.swift */; };
+		8A655B4A2222459C00B91FC4 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A655B492222459C00B91FC4 /* Map.storyboard */; };
+		8A655B6D2222718900B91FC4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A11DF06221CF07A00FC3975 /* MessageUI.framework */; };
 		8AA2E15921A0A6300068E282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2E15821A0A6300068E282 /* AppDelegate.swift */; };
 		8AA2E15B21A0A6300068E282 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2E15A21A0A6300068E282 /* ContainerVC.swift */; };
 		8AA2E15E21A0A6300068E282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA2E15C21A0A6300068E282 /* Main.storyboard */; };
@@ -42,8 +42,6 @@
 		8A494011221D188A0079D177 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		8A494015221D1AD60079D177 /* Map.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Map.xcdatamodel; sourceTree = "<group>"; };
 		8A494016221D1AD70079D177 /* connections.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = connections.gpx; sourceTree = "<group>"; };
-		8A494017221D1AD70079D177 /* MapViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewControler.swift; sourceTree = "<group>"; };
-		8A49401B221D1AE20079D177 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		8A49401E221D1BB90079D177 /* TOS.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TOS.storyboard; sourceTree = "<group>"; };
 		8A494021221D1C600079D177 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		8A494022221D1C600079D177 /* StringConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConversion.swift; sourceTree = "<group>"; };
@@ -52,6 +50,8 @@
 		8A494029221D1C6D0079D177 /* WordPress.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WordPress.storyboard; sourceTree = "<group>"; };
 		8A6554C621A2003100656573 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		8A6554C821A20D5100656573 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		8A655B472222457C00B91FC4 /* MapScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapScreen.swift; path = "../../../../../../Downloads/MapKit-Directions/MapKit-Directions/MapScreen.swift"; sourceTree = "<group>"; };
+		8A655B492222459C00B91FC4 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		8AA2E15521A0A6300068E282 /* RapidApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RapidApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA2E15821A0A6300068E282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AA2E15A21A0A6300068E282 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A11DF07221CF07A00FC3975 /* MessageUI.framework in Frameworks */,
+				8A655B6D2222718900B91FC4 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +96,8 @@
 			children = (
 				8A494016221D1AD70079D177 /* connections.gpx */,
 				8A494014221D1AD60079D177 /* Map.xcdatamodeld */,
-				8A49401B221D1AE20079D177 /* Map.storyboard */,
-				8A494017221D1AD70079D177 /* MapViewControler.swift */,
+				8A655B492222459C00B91FC4 /* Map.storyboard */,
+				8A655B472222457C00B91FC4 /* MapScreen.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -238,11 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A49402A221D1C6D0079D177 /* WordPress.storyboard in Resources */,
+				8A655B4A2222459C00B91FC4 /* Map.storyboard in Resources */,
 				8AF35E11221D0802006B166D /* Privacy.storyboard in Resources */,
 				8AA2E16321A0A6310068E282 /* LaunchScreen.storyboard in Resources */,
 				8AA2E16021A0A6310068E282 /* Assets.xcassets in Resources */,
 				8A49401F221D1BB90079D177 /* TOS.storyboard in Resources */,
-				8A49401C221D1AE20079D177 /* Map.storyboard in Resources */,
 				8A494019221D1AD70079D177 /* connections.gpx in Resources */,
 				8AA2E15E21A0A6300068E282 /* Main.storyboard in Resources */,
 				8A494010221D187D0079D177 /* Contact.storyboard in Resources */,
@@ -257,7 +257,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A44F91621A9EC70008C3294 /* ClientConfig.swift in Sources */,
-				8A49401A221D1AD70079D177 /* MapViewControler.swift in Sources */,
 				8AA2E15B21A0A6300068E282 /* ContainerVC.swift in Sources */,
 				8A6554C921A20D5100656573 /* MainVC.swift in Sources */,
 				8A494028221D1C610079D177 /* WordPressViewController.swift in Sources */,
@@ -265,6 +264,7 @@
 				8AA2E15921A0A6300068E282 /* AppDelegate.swift in Sources */,
 				8A6554C721A2003100656573 /* SideMenuVC.swift in Sources */,
 				8A44F91421A9EB58008C3294 /* UIColorExtension.swift in Sources */,
+				8A655B482222457C00B91FC4 /* MapScreen.swift in Sources */,
 				8A494012221D188A0079D177 /* ContactViewController.swift in Sources */,
 				8A494018221D1AD70079D177 /* Map.xcdatamodeld in Sources */,
 				8A494027221D1C610079D177 /* WordPressModel.swift in Sources */,

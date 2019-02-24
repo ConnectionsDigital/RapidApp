@@ -8,11 +8,11 @@
 
 import Foundation
 
-public struct Network {
+struct Network {
     let url: String = "https://connections.digital"
 }
 
-public struct Contact {
+struct Contact {
     let longName: String = "Connections Information Systems"
     let shortName: String = "Connections.Digital"
     let tagLine: String = "Website Design & Media Production"
@@ -30,7 +30,7 @@ public struct Contact {
     let youTubeUrl: String = "https://www.youtube.com/connectionsis/"
 }
 
-public struct Style {
+struct Style {
     let headerTextColor: String = "FFFFFF"
     let headerBackgroundColor: String = "E32400"
     let primaryFont: String = "helvetica"
