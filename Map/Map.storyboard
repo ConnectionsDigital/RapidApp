@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BdW-bd-iuW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BdW-bd-iuW">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,7 +13,7 @@
         <!--Map Screen-->
         <scene sceneID="Em6-RC-vQg">
             <objects>
-                <viewController id="BdW-bd-iuW" customClass="MapScreen" customModule="MapKit_Directions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BdW-bd-iuW" customClass="MapScreen" customModule="RapidApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rz1-9r-wbd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,13 +24,6 @@
                                     <outlet property="delegate" destination="BdW-bd-iuW" id="i0E-MX-SIM"/>
                                 </connections>
                             </mapView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin" translatesAutoresizingMaskIntoConstraints="NO" id="y6l-dd-QvP">
-                                <rect key="frame" x="167.66666666666666" y="366" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Qzp-7H-cu1"/>
-                                    <constraint firstAttribute="width" constant="40" id="gPo-Am-V0S"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSG-JP-T24">
                                 <rect key="frame" x="0.0" y="728" width="375" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,12 +53,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CSG-JP-T24" firstAttribute="top" secondItem="m5D-jd-zdf" secondAttribute="bottom" constant="20" id="7GZ-JA-ePa"/>
-                            <constraint firstItem="y6l-dd-QvP" firstAttribute="centerX" secondItem="Rz1-9r-wbd" secondAttribute="centerX" id="7W8-wi-Cg5"/>
                             <constraint firstItem="VBM-7k-Qu2" firstAttribute="bottom" secondItem="Igw-cM-moa" secondAttribute="bottom" id="8rB-g1-evg"/>
                             <constraint firstItem="Igw-cM-moa" firstAttribute="leading" secondItem="Rz1-9r-wbd" secondAttribute="leading" id="CFk-GP-C3d"/>
                             <constraint firstAttribute="trailing" secondItem="m5D-jd-zdf" secondAttribute="trailing" constant="20" id="Hox-7Y-uPf"/>
                             <constraint firstItem="Igw-cM-moa" firstAttribute="top" secondItem="Rz1-9r-wbd" secondAttribute="top" id="R1C-Vn-grC"/>
-                            <constraint firstItem="y6l-dd-QvP" firstAttribute="centerY" secondItem="Rz1-9r-wbd" secondAttribute="centerY" constant="-20" id="Tdj-QW-kmj"/>
                             <constraint firstAttribute="trailing" secondItem="Igw-cM-moa" secondAttribute="trailing" id="hEq-7i-egA"/>
                             <constraint firstItem="CSG-JP-T24" firstAttribute="leading" secondItem="Rz1-9r-wbd" secondAttribute="leading" id="iyu-wu-Kj2"/>
                             <constraint firstAttribute="trailing" secondItem="CSG-JP-T24" secondAttribute="trailing" id="kba-OW-Xas"/>
@@ -83,7 +75,4 @@
             <point key="canvasLocation" x="53.600000000000001" y="22.906403940886701"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Pin" width="16" height="46"/>
-    </resources>
 </document>

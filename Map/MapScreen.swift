@@ -44,7 +44,6 @@ class MapScreen: UIViewController {
         }
     }
     
-    
     func checkLocationServices() {
         if CLLocationManager.locationServicesEnabled() {
             setupLocationManager()
@@ -53,7 +52,6 @@ class MapScreen: UIViewController {
             // Show alert letting the user know they have to turn this on.
         }
     }
-    
     
     func checkLocationAuthorization() {
         switch CLLocationManager.authorizationStatus() {
@@ -72,18 +70,18 @@ class MapScreen: UIViewController {
         }
     }
     
-    
+    // Start traking user location
     func startTackingUserLocation() {
         mapView.showsUserLocation = true
         centerViewOnUserLocation()
         locationManager.startUpdatingLocation()
-        previousLocation = getCenterLocation(for: mapView)
+        previousLocation = getDestinationLocation(for: mapView)
     }
     
-    
-    func getCenterLocation(for mapView: MKMapView) -> CLLocation {
-        let latitude = mapView.centerCoordinate.latitude
-        let longitude = mapView.centerCoordinate.longitude
+    // Set destination coordinates
+    func getDestinationLocation(for mapView: MKMapView) -> CLLocation {
+        let latitude = 35.1990561
+        let longitude = -101.8826501
         
         return CLLocation(latitude: latitude, longitude: longitude)
     }
@@ -112,7 +110,7 @@ class MapScreen: UIViewController {
     
     
     func createDirectionsRequest(from coordinate: CLLocationCoordinate2D) -> MKDirections.Request {
-        let destinationCoordinate       = getCenterLocation(for: mapView).coordinate
+        let destinationCoordinate       = getDestinationLocation(for: mapView).coordinate
         let startingLocation            = MKPlacemark(coordinate: coordinate)
         let destination                 = MKPlacemark(coordinate: destinationCoordinate)
         
@@ -120,11 +118,10 @@ class MapScreen: UIViewController {
         request.source                  = MKMapItem(placemark: startingLocation)
         request.destination             = MKMapItem(placemark: destination)
         request.transportType           = .automobile
-        request.requestsAlternateRoutes = true
+        request.requestsAlternateRoutes = false
         
         return request
     }
-    
     
     func resetMapView(withNew directions: MKDirections) {
         mapView.removeOverlays(mapView.overlays)
@@ -132,12 +129,10 @@ class MapScreen: UIViewController {
         let _ = directionsArray.map { $0.cancel() }
     }
     
-    
     @IBAction func goButtonTapped(_ sender: UIButton) {
         getDirections()
     }
 }
-
 
 extension MapScreen: CLLocationManagerDelegate {
     
@@ -146,11 +141,10 @@ extension MapScreen: CLLocationManagerDelegate {
     }
 }
 
-
 extension MapScreen: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
-        let center = getCenterLocation(for: mapView)
+        let center = getDestinationLocation(for: mapView)
         
         guard let previousLocation = self.previousLocation else { return }
         
@@ -181,7 +175,7 @@ extension MapScreen: MKMapViewDelegate {
         }
     }
     
-    
+    // Render directions polyline
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(overlay: overlay as! MKPolyline)
         renderer.strokeColor = .blue
