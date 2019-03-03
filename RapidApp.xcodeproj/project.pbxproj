@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		8A3DAEE4222B6D2B00AF60F1 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3DAEE2222B6D2B00AF60F1 /* Map.storyboard */; };
 		8A3DAEE5222B6D2B00AF60F1 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DAEE3222B6D2B00AF60F1 /* MapScreen.swift */; };
+		8A3DAEE7222BCF0300AF60F1 /* CustomPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DAEE6222BCF0300AF60F1 /* CustomPin.swift */; };
 		8A44F91221A9E68C008C3294 /* AdminConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44F91121A9E68C008C3294 /* AdminConfig.swift */; };
 		8A44F91421A9EB58008C3294 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44F91321A9EB58008C3294 /* UIColorExtension.swift */; };
 		8A494010221D187D0079D177 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A49400F221D187D0079D177 /* Contact.storyboard */; };
 		8A494012221D188A0079D177 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A494011221D188A0079D177 /* ContactViewController.swift */; };
-		8A494018221D1AD70079D177 /* Map.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A494014221D1AD60079D177 /* Map.xcdatamodeld */; };
 		8A494019221D1AD70079D177 /* connections.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 8A494016221D1AD70079D177 /* connections.gpx */; };
 		8A49401F221D1BB90079D177 /* TOS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A49401E221D1BB90079D177 /* TOS.storyboard */; };
 		8A494025221D1C610079D177 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A494021221D1C600079D177 /* PostCell.swift */; };
@@ -36,11 +36,11 @@
 		8A11DF06221CF07A00FC3975 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		8A3DAEE2222B6D2B00AF60F1 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		8A3DAEE3222B6D2B00AF60F1 /* MapScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		8A3DAEE6222BCF0300AF60F1 /* CustomPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPin.swift; sourceTree = "<group>"; };
 		8A44F91121A9E68C008C3294 /* AdminConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminConfig.swift; sourceTree = "<group>"; };
 		8A44F91321A9EB58008C3294 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		8A49400F221D187D0079D177 /* Contact.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
 		8A494011221D188A0079D177 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
-		8A494015221D1AD60079D177 /* Map.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Map.xcdatamodel; sourceTree = "<group>"; };
 		8A494016221D1AD70079D177 /* connections.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = connections.gpx; sourceTree = "<group>"; };
 		8A49401E221D1BB90079D177 /* TOS.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TOS.storyboard; sourceTree = "<group>"; };
 		8A494021221D1C600079D177 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 				8A494016221D1AD70079D177 /* connections.gpx */,
 				8A3DAEE2222B6D2B00AF60F1 /* Map.storyboard */,
 				8A3DAEE3222B6D2B00AF60F1 /* MapScreen.swift */,
-				8A494014221D1AD60079D177 /* Map.xcdatamodeld */,
+				8A3DAEE6222BCF0300AF60F1 /* CustomPin.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -261,8 +261,8 @@
 				8AA2E15921A0A6300068E282 /* AppDelegate.swift in Sources */,
 				8A6554C721A2003100656573 /* SideMenuVC.swift in Sources */,
 				8A44F91421A9EB58008C3294 /* UIColorExtension.swift in Sources */,
+				8A3DAEE7222BCF0300AF60F1 /* CustomPin.swift in Sources */,
 				8A494012221D188A0079D177 /* ContactViewController.swift in Sources */,
-				8A494018221D1AD70079D177 /* Map.xcdatamodeld in Sources */,
 				8A494027221D1C610079D177 /* WordPressModel.swift in Sources */,
 				8A494026221D1C610079D177 /* StringConversion.swift in Sources */,
 				8A494025221D1C610079D177 /* PostCell.swift in Sources */,
@@ -458,19 +458,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8A494014221D1AD60079D177 /* Map.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8A494015221D1AD60079D177 /* Map.xcdatamodel */,
-			);
-			currentVersion = 8A494015221D1AD60079D177 /* Map.xcdatamodel */;
-			path = Map.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 8AA2E14D21A0A6300068E282 /* Project object */;
 }

@@ -17,12 +17,11 @@ class MapScreen: UIViewController {
     @IBOutlet weak var goButton: UIButton!
     
     let locationManager = CLLocationManager()
-    let regionInMeters: Double = 10000
+    let regionInMeters: Double = 3000
     var previousLocation: CLLocation?
     
     let geoCoder = CLGeocoder()
     var directionsArray: [MKDirections] = []
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +29,10 @@ class MapScreen: UIViewController {
         checkLocationServices()
     }
     
-    
     func setupLocationManager() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
-    
     
     func centerViewOnUserLocation() {
         if let location = locationManager.location?.coordinate {
@@ -86,7 +83,6 @@ class MapScreen: UIViewController {
         return CLLocation(latitude: latitude, longitude: longitude)
     }
     
-    
     func getDirections() {
         guard let location = locationManager.location?.coordinate else {
             //TODO: Inform user we don't have their current location
@@ -103,21 +99,22 @@ class MapScreen: UIViewController {
             
             for route in response.routes {
                 self.mapView.addOverlay(route.polyline)
-                self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
+                //self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
+                self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, edgePadding: UIEdgeInsets.init(top: 50, left: 50, bottom: 50, right: 50), animated: true)
             }
         }
     }
     
-    
     func createDirectionsRequest(from coordinate: CLLocationCoordinate2D) -> MKDirections.Request {
-        let destinationCoordinate       = getDestinationLocation(for: mapView).coordinate
-        let startingLocation            = MKPlacemark(coordinate: coordinate)
-        let destination                 = MKPlacemark(coordinate: destinationCoordinate)
-        
-        let request                     = MKDirections.Request()
-        request.source                  = MKMapItem(placemark: startingLocation)
-        request.destination             = MKMapItem(placemark: destination)
-        request.transportType           = .automobile
+        let destinationCoordinate = getDestinationLocation(for: mapView).coordinate
+        let startingLocation = MKPlacemark(coordinate: coordinate)
+        let destination = MKPlacemark(coordinate: destinationCoordinate)
+        let destinationPin = customPin(pinTitle: "Galleries at Sunset Center", pinSubTitle: "", location: destinationCoordinate)
+        self.mapView.addAnnotation(destinationPin)
+        let request = MKDirections.Request()
+        request.source = MKMapItem(placemark: startingLocation)
+        request.destination = MKMapItem(placemark: destination)
+        request.transportType = .automobile
         request.requestsAlternateRoutes = false
         
         return request
