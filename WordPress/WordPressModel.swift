@@ -10,8 +10,8 @@ import Foundation
 
 struct WPModel: Codable {
     
-    var link: String = "" // Article URL
     var date: String = "" // Article release date
+    var link: String = "" // Article URL
     
     var dateString: String {
         // Create instance of DateFormatter
